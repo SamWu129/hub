@@ -96,7 +96,25 @@ def loger(m):
    global result
    result +=m+'\n'
     
+def notice(b,e):
 
+    ll=False
+
+    start_time = datetime.strptime(str(datetime.now().date())+b, '%Y-%m-%d%H:%M')
+
+    end_time =  datetime.strptime(str(datetime.now().date())+e, '%Y-%m-%d%H:%M')
+
+    now_time = datetime.now()
+
+    if now_time > start_time and now_time<end_time:
+
+       ll=True
+
+    else:
+
+    	ll=False
+
+    return ll
 
 def start():
    global bdlist,urllist,hdlist
@@ -120,7 +138,8 @@ def start():
           time.sleep(random.randint(2,4))
        time.sleep(random.randint(1,4))
        print('🔔'*15)
-     pushmsg('Youku',result)
+   if notice('4:00','5:00') or notice('22:00','23:00') or notice('13:00','14:00'):
+       pushmsg('Youku',result)
    
 
 if __name__ == '__main__':
