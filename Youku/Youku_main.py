@@ -138,7 +138,7 @@ def start():
           time.sleep(random.randint(2,4))
        time.sleep(random.randint(1,4))
        print('🔔'*15)
-    if notice('4:00','5:00') or notice('22:00','23:00') or notice('13:00','14:00'):
+if notice('4:00','5:00') or notice('22:00','23:00') or notice('13:00','14:00'):
        pushmsg('Youku',result)
    
 
