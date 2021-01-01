@@ -71,7 +71,7 @@ def start():
    time.sleep(random.randint(1,5))
    watch('sam_newurl',urllist)
    for j in range(8):
-     for j in range(7):
+     for j in range(8):
        print('====count===='+str(j))
        bdlist=[]
        watch('sam_newheader'+str(j),hdlist)
