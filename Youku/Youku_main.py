@@ -122,7 +122,6 @@ def start():
    watch('sam_url',urllist)
    watch('sam_headers',hdlist)
    for j in range(5):
-     result=''
      for j in range(8):
        print('====count===='+str(j+1))
        #if(j<2):
